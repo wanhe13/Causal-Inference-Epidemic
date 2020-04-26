@@ -12,13 +12,11 @@ numpy,matplotlib,gzip,networkx,random,scipy,collections,powerlaw
 This project is focused on indentifying network properties that affects disease spreading under compartmental models. Simulations are used to target these underlying network properties through designated experiments. 
 
 
-
-
-A summary of what the project has achieved:
+A summary of what the project has covered:
 
 1. Implemented the compartmental models such as the SIR and SEIRD on simulated networks with different structures or properties including the BA model, Watts-Strogatz model, Erdos-Renyi model and their configuration networks that preserve the same degree distribution or/and other network properties such as the total number of edges and nodes. 
 
-2. Compared the spreading patterns of the disease with varying infection rate (beta) while controlling network and recovery rate.
+2. Compared the spreading patterns of the disease with varying infection rate (beta) while controlling network and recovery rate to find the epidemic threshold.
 
 When the social contact network is naively modeled by a BA network, simulation showed that when the infection rate ($\beta$) could be decreased to be a factor of <k> smaller than the recovery rate $\mu$, the spreading of the disease could be immediately stopped, where <k> denotes the average degree of the network. This result indicates that if the government intervention is able to reduce the chance of an individual contracting the disease when in contact of an infected individual, by strictly enforcing practices such as wearing face masks, the disease spreading could be stopped. Simulations also indicated that beta < mu/<k> is not a necessary condition to flatten the curve.
 
