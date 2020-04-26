@@ -12,7 +12,34 @@ numpy,matplotlib,gzip,networkx,random,scipy,collections,powerlaw
 This project is focused on indentifying network properties that affects disease spreading under compartmental models. Simulations are used to target these underlying network properties through designated experiments. 
 
 
-A summary of what the project has covered:
+## How to explore this project
+
+The notebook included in the repository mainly contains the following:
+
+Functions that could be used to simulate disease spreading under SIR, SEIR, SEIRED with the adjacency matrix of any prefered network as input. Other configurable parameters include initial infected cases I0, infection rate $\beta$, recovery rate $\mu$, time steps T, and how many times the simulation should be run "rep". With some minor changes to the code, more compartments could be added to the compartmental model. The default plot would be outputted with a 95% CI.
+
+Functions to generate BA, ER, WS and configuration networks are also included, along with visualisations for the adjacency matrix, plots to compare and contrast disease spreading patterns.
+
+Functions to get the degrees of an input adjacency matrix, plotting functions to compare and contrast degree distributions or other experiment specific parameters.
+
+Function build_G(mzero,nC,p=0.1,mobility=0.6) to simulate a decentralised toy-population model with configurable Poisson distributed mean local community size (size of family unit), number of communities in the population, intercommunity connecting probability p, and mobility that could be interpreted as inter-community rewiring probability(0<mobility<1).
+
+Function sir_moving_network(mzero,nC,p,mobility,I0,beta,mu,T) that simulates the spreading of infectious cases and at the same time reconnects the population with the mobility parameter p.
+
+Function HierNet(mzero,n_copy,level) that creates a network embedding hierarchical structure and a function sir_hier_attack that simulates disease spreading when at each time step the node with the highest degree is immunised.
+
+
+In this section, you will explain to other people how to navigate your project.
+
+I am going to use this section to explain how to set up your project directory.
+
+Put your project in the appropriate project directory. Create a subdirectory for your project and give it a clear name that reflects specific elements of your project.  It should not conflict with other group's names, obviously.  For example, some students who analyzed Airbnb data analyzed Bay Area real estate, while others analyzed Austin TX.  So good subdirectory names would be "airbnb model bay area" and "airbnb model austin".
+
+Set up your project directory as you see fit.  The two most important things are **presentation** and **reproducibility**.
+
+
+
+# A summary of what the project has covered:
 
 1. Implemented the compartmental models such as the SIR and SEIRD on simulated networks with different structures or properties including the BA model, Watts-Strogatz model, Erdos-Renyi model and their configuration networks that preserve the same degree distribution or/and other network properties such as the total number of edges and nodes. 
 
