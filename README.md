@@ -4,6 +4,16 @@
 For most of the experiments/simulations done for the project, compartmental parameters estimated by AJ Kucharski are adopted
 https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30144-4/fulltext
 
+Required packages:
+
+numpy,matplotlib,gzip,networkx,random,scipy,collections,powerlaw
+
+# Abstract
+This project is focused on indentifying network properties that affects disease spreading under compartmental models. Simulations are used to target these underlying network properties through designated experiments. 
+
+
+
+
 A summary of what the project has achieved:
 
 1. Implemented the compartmental models such as the SIR and SEIRD on simulated networks with different structures or properties including the BA model, Watts-Strogatz model, Erdos-Renyi model and their configuration networks that preserve the same degree distribution or/and other network properties such as the total number of edges and nodes. 
