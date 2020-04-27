@@ -10,7 +10,7 @@ numpy,matplotlib,gzip,networkx,random,scipy,collections,powerlaw
 
 # Abstract
 This project is focused on indentifying network properties that affects disease spreading under compartmental models. Simulations are used to target these underlying network properties through designated experiments. 
-
+Introduction video: [https://github.com/wanhe13/Causal-Inference-Epidemic]
 
 ## How to explore this project
 
